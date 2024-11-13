@@ -42,6 +42,7 @@
   "main": "index.js",
   "devDependencies": {},
   "keywords": [],
+  "type":"module",
   "author": "",
   "license": "ISC"
 }

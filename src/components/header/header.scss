@@ -1,0 +1,24 @@
+.mae{
+    width: 100%;
+    height: 4vh;
+    color: white;
+
+    
+    .informacoes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+    }
+
+
+        .linha {
+            background-image: linear-gradient(90deg, rgba(0,94,162,1) 0%, rgba(0,80,203,1) 44%, rgba(0,212,255,1) 100%);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 100% 1px; /* Tamanho da "borda" */
+            padding-bottom: 10px; /* Ajuste o espaço para a borda */
+          }
+    
+    
+}
