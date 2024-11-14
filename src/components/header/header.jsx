@@ -1,4 +1,7 @@
 import './header.scss';
+import linkedin from '../../assets/linkedin.png'
+import insta from '../../assets/instagram.png'
+import menu from '../../assets/cardapio.png'
 
 
 export default function header() {
@@ -10,7 +13,7 @@ export default function header() {
 
 
                 <div className='primeira'>
-                    <p>oi</p>
+                <img src={menu} alt=""/>
                 </div>
 
                 <div className='segunda'>
@@ -19,8 +22,15 @@ export default function header() {
 
                 <div className='terceira'>
 
-                    <p>insta</p>
-                    <p>linkedin</p>
+                    <a href="https://www.linkedin.com/in/nicolas-voltareli-coelho-998989315?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtZf0ooAeQbuZC41Y77Wl7w%3D%3D">
+
+                    <img src={linkedin} alt=""/>
+                    </a>
+
+                    <a href="https://www.instagram.com/vvoltareli/">
+
+                    <img src={insta} alt="" />
+                    </a>
 
                 </div>
 

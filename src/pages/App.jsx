@@ -1,40 +1,48 @@
 import './App.scss';
 import Eu from '../assets/foto.png'
 import Header from '../components/header/header';
+
+
 function App() {
   return (
     <div className="principal">
       <div className='fundo'>
-        <Header/>
+        <Header />
 
 
-      
+
         <div className='lang'>
 
-        <div className='infos'>
+          <div className='infos'>
 
-          <h2>Olá, Sou o <br />Nicolas Voltareli</h2>
-          <p>Seu desenvolver <strong>full-stack</strong></p>
+            <h2 className='nom1'>Olá, Sou o <br /> <span className='nome'>Nicolas Voltareli</span></h2>
+            <p>Seu desenvolver <strong>full-stack</strong></p>
 
-          <div className='curriculo-contato'>
+            <div className='curriculo-contato'>
 
-            <div className='botao1'>
-              <button className='curriculo'>Download CV</button>
+              <div className='botao1'>
+                <a href='https://1drv.ms/b/s!ArgL7TJn49UT5g_GkrR2MeQkcPyR?e=byn6Gd' download className='botao-download'>
+
+                <button className='curriculo'>Download CV</button>
+                </a>
+              </div>
+
+              <div className='botao2'>
+              <a href="mailto:nivoltareli@gmail.com">
+
+                <button className=''>Entra em contato</button>
+                </a>
+              </div>
             </div>
 
-            <div className='botao2'>
-              <button className=''>Entra em contato</button>
-            </div>
+
           </div>
 
+          <div className='foto'>
 
-        </div>
+            <img src={Eu} alt="" />
 
-        <div className='foto'>
-
-          <img src={Eu} alt="" />
-
-        </div>
+          </div>
 
         </div>
 

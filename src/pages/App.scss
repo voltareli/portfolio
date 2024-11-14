@@ -5,7 +5,7 @@
 }
 
 .fundo{
-    background-color: #000127;
+    background-color: #00011a;
     width: 100%;
     height: auto;
     color: white;
@@ -22,28 +22,59 @@
         .infos{
             display: flex;
             flex-direction: column;
+            gap: 3vh;
+            h2{
+
+                font-size: 2vw;
+            }
+            .nome{
+                color: #00BCF5;
+                font-size: 3vw;
+            }
+            p{
+                margin-top: -2vh;
+            }
 
             .curriculo-contato{
                 display: flex;
-                gap: 1vh;
+                gap: 1.5vh;
 
                 .botao1{
                     
                     button{
-                        padding: 1.2vh 3vh;
-                        border-radius: 2vh;
+                        padding: 1vw 3vw;
+                        border-radius: 3.5vw;
                         border: 0px;
                         background: linear-gradient(90deg, rgba(0,94,162,1) 0%, rgba(0,80,203,1) 44%, rgba(0,212,255,1) 100%);
+                        font-size: 18px;
+                        color: white;
+                        transition: all 0.3s;
+
+                       
+                        
+                    }
+
+                    button:hover{
+                        transform: scale(0.92);
                     }
                 }
 
                 .botao2{
                     
                     button{
-                        padding: 1.2vh 3vh;
-                        border-radius: 2vh;
-                        border: 0px;
-                        background: white
+                        padding: 1vw 2.8vw;
+                        border-radius: 3.5vw;
+                        border: 1px solid #00BCF5;
+                        font-size: 18px;
+                        color: white;
+                        background-color: transparent;
+                        transition: all 0.3s;
+
+                    }
+
+                    button:hover{
+                        transform: scale(0.92);
+                        background: #00BCF5;
                     }
                 }
 
@@ -51,6 +82,35 @@
             }
             
         }
+
+        .foto{
+            img{
+                width: 27vw;
+                transition: all 0.3s;
+
+            }
+
+            img:hover{
+                transform: scale(1.04);
+            }
+        }
         
     }
+
+   .sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p{
+        width: 66%;
+        font-size: 1vw;
+    }
+
+    h1{
+        font-size: 34px; 
+        font-weight: 700; 
+    }
+   } 
 }
