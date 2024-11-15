@@ -7,10 +7,11 @@
 .fundo{
     background-color: #00011a;
     width: 100%;
-    height: auto;
+    height: AUTO;
     color: white;
     display: flex ;
     flex-direction: column;
+    gap: 10vh;
 
     .lang{
 
@@ -33,6 +34,7 @@
             }
             p{
                 margin-top: -2vh;
+                color: #a7a7a7;
             }
 
             .curriculo-contato{
@@ -102,10 +104,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3vh;
 
     p{
-        width: 66%;
-        font-size: 1vw;
+        width: 55%;
+        font-size: 2.4vh;
+        color: #a7a7a7;
     }
 
     h1{
@@ -113,4 +117,60 @@
         font-weight: 700; 
     }
    } 
+
+   .habilidades{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 2vh;
+
+    .titulo{
+
+        
+        h1{
+            font-size: 34px; 
+            font-weight: 700;
+        }
+    }
+
+    .conetudo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 6vh;
+        flex-wrap: wrap;
+        margin-bottom: 4vh;
+    }
+   }
+
+   .Projetos{
+display: flex;
+flex-direction: column;
+gap: 6vh;
+
+    .titulo{
+        padding: 2vh;
+        margin-top: 4vh;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 50vh;
+        height: auto;
+        border-top-right-radius: 1vh;
+        border-bottom-right-radius: 5vh;
+        
+    
+        background-color:  #646464;
+        border-bottom: 0.8vh solid #00BCF5;
+    }
+
+    .meus-trabalhos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4vh;
+        margin-bottom: 2vw;
+    }
+   }
 }
