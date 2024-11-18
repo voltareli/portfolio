@@ -1,6 +1,6 @@
 import './header.scss';
 import linkedin from '../../assets/linkedin.png'
-import insta from '../../assets/instagram.png'
+import git from '../../assets/github.png'
 import menu from '../../assets/cardapio.png'
 
 
@@ -27,9 +27,9 @@ export default function header() {
                     <img src={linkedin} alt=""/>
                     </a>
 
-                    <a href="https://www.instagram.com/vvoltareli/">
+                    <a href="https://github.com/voltareli">
 
-                    <img src={insta} alt="" />
+                    <img className='git' src={git} alt="" />
                     </a>
 
                 </div>
