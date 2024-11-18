@@ -4,7 +4,7 @@ import Header from '../components/header/header';
 import Card from '../components/card-habilidade/card'
 import Sql from '../assets/mysql.png'
 import Js from '../assets/java.png'
-import Html from '../assets/html.png'
+import Html from '../assets/images-removebg-preview.png'
 import React1 from '../assets/react.png'
 import Node from '../assets/node.png'
 import Projetu from '../components/card-projeto/projeto'
