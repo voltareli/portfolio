@@ -29,11 +29,12 @@ function App() {
     document.body.removeChild(link);
   };
 
-
-  function enviarMensagemWhatsApp() {
-    const url = `https://wa.me/5511981256503?text=${encodeURIComponent('Olá Nicolas, vim pelo seu site portifólio!')}`;
-    window.open(url, '_blank', 'noopener,noreferrer');
+  function enviarEmail() {
+    const email = 'nivoltareli@gmail.com';
+    const link = `mailto:${email}`;
+    window.location.href = link;
   }
+  
 
   return (
     <div className="principal">
@@ -55,7 +56,7 @@ function App() {
 
                 <div className="botao2">
                  
-                    <button onClick={enviarMensagemWhatsApp} className="">Entre em contato</button>
+                    <button onClick={enviarEmail} className="">Entre em contato</button>
                
                 </div>
               </div>
