@@ -31,9 +31,9 @@ function App() {
 
 
   function enviarMensagemWhatsApp() {
-    let url = `https://wa.me/5511981256503?text=${encodeURIComponent('Olá Nicolas, vim pelo seu site portifólio!')}`;
-    window.open(url, '_blank');
-}
+    const url = `https://wa.me/5511981256503?text=${encodeURIComponent('Olá Nicolas, vim pelo seu site portifólio!')}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
 
   return (
     <div className="principal">
@@ -55,7 +55,7 @@ function App() {
 
                 <div className="botao2">
                  
-                    <button onClick={enviarMensagemWhatsApp()} className="">Entre em contato</button>
+                    <button onClick={enviarMensagemWhatsApp} className="">Entre em contato</button>
                
                 </div>
               </div>
