@@ -29,6 +29,12 @@ function App() {
     document.body.removeChild(link);
   };
 
+
+  function enviarMensagemWhatsApp() {
+    let url = `https://wa.me/5511981256503?text=${encodeURIComponent('Olá Nicolas, vim pelo seu site portifólio!')}`;
+    window.open(url, '_blank');
+}
+
   return (
     <div className="principal">
       <div className="fundo">
@@ -48,9 +54,9 @@ function App() {
                 </div>
 
                 <div className="botao2">
-                  <a href="mailto:nivoltareli@gmail.com">
-                    <button className="">Entre em contato</button>
-                  </a>
+                 
+                    <button onClick={enviarMensagemWhatsApp} className="">Entre em contato</button>
+               
                 </div>
               </div>
             </div>
