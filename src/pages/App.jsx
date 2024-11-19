@@ -94,7 +94,7 @@ function App() {
 
           </section>
 
-          <section id='projetoss'>
+          <section id='projetos'>
 
 
         <div className='Projetos'>
