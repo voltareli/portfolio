@@ -55,7 +55,7 @@ function App() {
 
                 <div className="botao2">
                  
-                    <button onClick={enviarMensagemWhatsApp} className="">Entre em contato</button>
+                    <button onClick={enviarMensagemWhatsApp()} className="">Entre em contato</button>
                
                 </div>
               </div>
