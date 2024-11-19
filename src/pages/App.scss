@@ -1,71 +1,76 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: Arial;
 }
 
-.fundo{
+.fundo {
     background-color: #00011a;
     width: 100%;
-    height: AUTO;
+    height: auto;
     color: white;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     gap: 10vh;
 
-    .lang{
+    .lang {
 
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: 2vh;
         
-        
-        .infos{
+
+
+        .infos {
             display: flex;
             flex-direction: column;
             gap: 3vh;
-            h2{
 
-                font-size: 2vw;
+            h2 {
+
+                font-size: 4vh;
             }
-            .nome{
+
+            .nome {
                 color: #00BCF5;
-                font-size: 3vw;
+                font-size: 8vh;
             }
-            p{
+
+            p {
                 margin-top: -2vh;
                 color: #a7a7a7;
             }
 
-            .curriculo-contato{
+            .curriculo-contato {
                 display: flex;
                 gap: 1.5vh;
 
-                .botao1{
-                    
-                    button{
-                        padding: 1vw 3vw;
-                        border-radius: 3.5vw;
+                .botao1 {
+
+                    button {
+                        padding: 2vh 5vh;
+                        border-radius: 5.5vh;
                         border: 0px;
-                        background: linear-gradient(90deg, rgba(0,94,162,1) 0%, rgba(0,80,203,1) 44%, rgba(0,212,255,1) 100%);
+                        background: linear-gradient(90deg, rgba(0, 94, 162, 1) 0%, rgba(0, 80, 203, 1) 44%, rgba(0, 212, 255, 1) 100%);
                         font-size: 18px;
                         color: white;
                         transition: all 0.3s;
 
-                       
-                        
+
+
                     }
 
-                    button:hover{
+                    button:hover {
                         transform: scale(0.92);
                     }
                 }
 
-                .botao2{
-                    
-                    button{
-                        padding: 1vw 2.8vw;
-                        border-radius: 3.5vw;
+                .botao2 {
+
+                    button {
+                        padding: 2vh 5vh;
+                        border-radius: 5.5vh;
                         border: 1px solid #00BCF5;
                         font-size: 18px;
                         color: white;
@@ -74,103 +79,209 @@
 
                     }
 
-                    button:hover{
+                    button:hover {
                         transform: scale(0.92);
                         background: #00BCF5;
                     }
                 }
 
-                
+
             }
-            
+
         }
 
-        .foto{
-            img{
-                width: 27vw;
+        .foto {
+            img {
+                width: 55vh;
                 transition: all 0.3s;
 
             }
 
-            img:hover{
+            img:hover {
                 transform: scale(1.04);
             }
         }
-        
+
     }
 
-   .sobre{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3vh;
+    .sobre {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
 
-    p{
-        width: 55%;
-        font-size: 2.4vh;
-        color: #a7a7a7;
-    }
+        p {
+            width: 55%;
+            font-size: 2.4vh;
+            color: #a7a7a7;
+        }
 
-    h1{
-        font-size: 34px; 
-        font-weight: 700; 
-    }
-   } 
-
-   .habilidades{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    gap: 5vh;
-    margin-top: 2vh;
-
-    .titulo{
-
-        
-        h1{
-            font-size: 34px; 
+        h1 {
+            font-size: 34px;
             font-weight: 700;
         }
     }
 
-    .conetudo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 6vh;
-        flex-wrap: wrap;
-        margin-bottom: 4vh;
-    }
-   }
-
-   .Projetos{
-display: flex;
-flex-direction: column;
-gap: 6vh;
-
-    .titulo{
-        padding: 2vh;
-        margin-top: 4vh;
+    .habilidades {
         flex-direction: column;
         display: flex;
         align-items: center;
-        width: 50vh;
-        height: auto;
-        border-top-right-radius: 1vh;
-        border-bottom-right-radius: 5vh;
-        
-    
-        background-color:  #646464;
-        border-bottom: 0.8vh solid #00BCF5;
+        gap: 5vh;
+        margin-top: 2vh;
+
+        .titulo {
+
+
+            h1 {
+                font-size: 34px;
+                font-weight: 700;
+            }
+        }
+
+        .conetudo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 6vh;
+            flex-wrap: wrap;
+            margin-bottom: 4vh;
+        }
     }
 
-    .meus-trabalhos{
+    .Projetos {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 4vh;
-        margin-bottom: 2vw;
+        flex-direction: column;
+        gap: 6vh;
+
+        .titulo {
+            padding: 2vh;
+            margin-top: 4vh;
+            flex-direction: column;
+            display: flex;
+            align-items: start;
+            width: 50vh;
+            height: auto;
+            gap: 1vh;
+
+            h1 {
+                font-size: 34px;
+                font-weight: 700;
+            }
+
+            .linha {
+                background-image: linear-gradient(90deg, rgba(0, 94, 162, 1) 0%, rgba(0, 80, 203, 1) 44%, rgba(0, 212, 255, 1) 100%);
+                width: 47%;
+                height: 0.4vh;
+            }
+
+        }
+
+        .meus-trabalhos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 4vh;
+            margin-bottom: 2vw;
+        }
     }
-   }
 }
+
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+
+    .fundo {
+        gap: 8vh;
+        margin-top: 0vh;
+    
+
+    .lang {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .foto {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 5vh;
+
+            img {
+                width: 35vh;
+                transition: all 0.3s;
+
+            }
+          
+        }
+
+        
+
+        .infos {
+            text-align: center;
+            margin-top: -5vh;
+        }
+    }
+
+    .sobre {
+        p {
+            width: 88%;
+            font-size: 2vh;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+    }
+
+    .habilidades {
+        .conetudo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 6vh;
+            flex-wrap: wrap;
+            margin-bottom: 4vh;
+        }
+    }
+
+    .Projetos {
+        .meus-trabalhos {
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+        }
+
+        .titulo {
+            width: 60%;
+            align-items: start;
+
+      
+                .linha {
+                    background-image: linear-gradient(90deg, rgba(0, 94, 162, 1) 0%, rgba(0, 80, 203, 1) 44%, rgba(0, 212, 255, 1) 100%);
+                    width:20vh;
+                    height: 0.4vh;
+                }
+            
+        }
+    }
+
+    .curriculo-contato {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .curriculo-contato .botao1,
+    .curriculo-contato .botao2 {
+        width: 100%;
+    }
+
+    .lang .infos h2 {
+        font-size: 5vw;
+    }
+
+    .lang .infos .nome {
+        font-size: 6vw;
+    }
+}}

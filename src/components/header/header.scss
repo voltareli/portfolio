@@ -1,54 +1,88 @@
-.mae{
+.mae {
     width: 100%;
-    height: 4vh;
+    height: auto;
     color: white;
-   display: flex;
-   flex-direction: column;
-
-
-    
-    .informacoes{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1vh 3vh;
-
-            .primeira{
-              
-                img{
-                    width:4vh ;
-                    height: auto;
-                }
-            }
-            .segunda{
-
-              font-size: 34px; 
-              font-weight: 700; 
-            }
-            .terceira{
-                display: flex;
-                gap: 10px;
-
-                img{
-                    width: 3.5vh ;
-                    height: auto;
-                }
-
-                .git{
-                    width: 3.8vh;
-                }
-            }
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    background-color: #00011a; 
+  
+    .informacoes {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1vh 3vh;
+  
+      .primeira {
+        img {
+          width: 4vh;
+          height: auto;
+          cursor: pointer;
+        }
+      }
+  
+      .segunda {
+        font-size: 34px;
+        font-weight: 700;
+      }
+  
+      .terceira {
+        display: flex;
+        gap: 10px;
+  
+        img {
+          width: 3.5vh;
+          height: auto;
+        }
+  
+        .git {
+          width: 3.8vh;
+        }
+      }
     }
+  
+    .linha {
+      background-image: linear-gradient(90deg, rgba(0, 94, 162, 1) 0%, rgba(0, 80, 203, 1) 44%, rgba(0, 212, 255, 1) 100%);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100% 3px;
+      padding-bottom: 10px;
+    }
+  
 
-
-        .linha {
-            background-image: linear-gradient(90deg, rgba(0,94,162,1) 0%, rgba(0,80,203,1) 44%, rgba(0,212,255,1) 100%);
-            background-position: bottom;
-            background-repeat: no-repeat;
-            background-size: 100% 3px; 
-            padding-bottom: 10px; 
+    .dropdownMenu {
+      position: absolute;
+      top: 6vh; 
+      left: 3vh;  
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 200px;
+      padding: 10px 0;
+  
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          padding: 10px 20px;
+  
+          a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            &:hover {
+              background-color: #f1f1f1;
+            }
           }
-    
-    
-}
+        }
+      }
+    }
+  }
+  

@@ -29,6 +29,7 @@ function App() {
         <Header />
 
 
+        <section id='home'>
 
         <div className='lang'>
 
@@ -64,13 +65,18 @@ function App() {
           </div>
 
         </div>
+        </section>
 
+      <section id='sobre'>
 
         <div className='sobre'>
 
           <h1>Sobre mim</h1>
           <p>Sou desenvolvedor Full Stack iniciante, com conhecimentos em JavaScript, Node.js, React.js e MySQL. Formado em Técnico em Desenvolvimento de Sistemas pelo Instituto Social Nossa Senhora de Fátima, estou em busca de oportunidades para aplicar minhas habilidades no desenvolvimento de aplicações completas, tanto no front-end quanto no back-end. Meu objetivo é continuar aprendendo e crescer profissionalmente, contribuindo para projetos desafiadores e de impacto.</p>
         </div>
+
+      </section>
+      <section id='habilidades'>
 
         <div className='habilidades'>
 
@@ -80,17 +86,22 @@ function App() {
 
           <div className='conetudo'>
           {cards.map((card, index) => (
-                <Card key={index} imagem={card.imagem} nome={card.nome} descricao={card.descricao} />
-            ))}
+            <Card key={index} imagem={card.imagem} nome={card.nome} descricao={card.descricao} />
+          ))}
           </div>
 
         </div>
+
+          </section>
+
+          <section id='projetoss'>
 
 
         <div className='Projetos'>
 
           <div className='titulo'>
             <h1>Meus Projetos</h1>
+            <div className='linha'></div>
           </div>
           <div className='meus-trabalhos'>
             
@@ -98,13 +109,14 @@ function App() {
           <Projetu 
                 imagem={Site} 
                 titulo="Doctor's Health" 
-                descricao="Site de um Clinico geral." 
+                descricao="TCC" 
                 data="28 de outubro de 2024" 
                 
                 />
                 </a>
           </div>
         </div>
+                </section>
       </div>
     </div>
   );
