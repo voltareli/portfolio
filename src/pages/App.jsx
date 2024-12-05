@@ -9,7 +9,7 @@ import React1 from '../assets/react.png';
 import Node from '../assets/node.png';
 import Projetu from '../components/card-projeto/projeto';
 import Site from '../assets/site.png';
-import Cv from '../assets/cv.pdf';
+import Cv from '../assets/Cv.pdf';
 
 function App() {
   const cards = [
