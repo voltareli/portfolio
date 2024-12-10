@@ -215,6 +215,7 @@
     .lang {
         flex-direction: column-reverse;
         align-items: center;
+        padding: 4vh 0vh;
 
         .foto {
             width: 80%;
@@ -240,6 +241,7 @@
     }
 
     .sobre {
+        padding: 5vh 0vh;
         p {
             width: 88%;
             font-size: 2vh;
