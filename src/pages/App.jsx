@@ -83,7 +83,7 @@ function App() {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2  }}
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
           <div className="sobre">
             <h1>Sobre mim</h1>
@@ -99,7 +99,7 @@ function App() {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2  }}
-      viewport={{ once: true, amount: 0.8 }} 
+      viewport={{ once: true, amount: 0.4 }} 
     >
       <div className="habilidades">
         <div className="titulo">
