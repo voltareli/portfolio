@@ -80,7 +80,7 @@ function App() {
 
         <motion.section
           id="sobre"
-          initial={{ opacity: 0, x: 20 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2  }}
           viewport={{ once: true, amount: 0.83 }}
