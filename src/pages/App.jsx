@@ -10,6 +10,10 @@ import Node from '../assets/node.png';
 import Projetu from '../components/card-projeto/projeto';
 import Site from '../assets/site.png';
 import Cv from '../assets/Cv.pdf';
+import { motion } from 'framer-motion';
+import VanillaTilt from 'vanilla-tilt';
+import { useEffect } from 'react';
+
 
 function App() {
   const cards = [
@@ -19,6 +23,11 @@ function App() {
     { imagem: React1, nome: 'ReactJs', descricao: 'Linguagem de programação para o front-end e back-end.' },
     { imagem: Sql, nome: 'MySQL', descricao: 'Linguagem de programação para o front-end e back-end.' }
   ];
+
+  useEffect(() => {
+  
+    VanillaTilt.init(document.querySelectorAll('[data-tilt]'));
+  }, []);
 
   const fazerDownload = () => {
     const link = document.createElement('a');  
@@ -40,7 +49,13 @@ function App() {
       <div className="fundo">
         <Header />
 
-        <section id="home">
+        <motion.section 
+          id="home" 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <div className="lang">
             <div className="infos">
               <h2 className="nom1">
@@ -52,45 +67,72 @@ function App() {
                 <div className="botao1">
                   <button onClick={fazerDownload} className="curriculo">Download CV</button>
                 </div>
-
                 <div className="botao2">
-                 
-                    <button onClick={enviarMensagemWhatsApp} className="">Entre em contato</button>
-               
+                  <button onClick={enviarMensagemWhatsApp} className="">Entre em contato</button>
                 </div>
               </div>
             </div>
-
-            <div className="foto">
+            <div className="foto" data-tilt data-tilt-max="3" data-tilt-speed="100" data-tilt-perspective="100">
               <img src={Eu} alt="Foto de Nicolas Voltareli" />
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="sobre">
+        <motion.section
+          id="sobre"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2  }}
+          viewport={{ once: true, amount: 0.1 }}
+        >
           <div className="sobre">
             <h1>Sobre mim</h1>
             <p>
               Sou desenvolvedor Full Stack iniciante, com conhecimentos em JavaScript, Node.js, React.js e MySQL. Formado em Técnico em Desenvolvimento de Sistemas pelo Instituto Social Nossa Senhora de Fátima, estou em busca de oportunidades para aplicar minhas habilidades no desenvolvimento de aplicações completas, tanto no front-end quanto no back-end. Meu objetivo é continuar aprendendo e crescer profissionalmente, contribuindo para projetos desafiadores e de impacto.
             </p>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="habilidades">
-          <div className="habilidades">
-            <div className="titulo">
-              <h1>Minhas habilidades</h1>
-            </div>
+    
+        <motion.section
+      id="habilidades"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.2  }}
+      viewport={{ once: true, amount: 0.8 }} 
+    >
+      <div className="habilidades">
+        <div className="titulo">
+          <h1>Minhas habilidades</h1>
+        </div>
+        <div className="conetudo">
+          {cards.map((card, index) => (
+            <motion.div
+              key={index}
+              className="card-container"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.3, 
+              }}
+              viewport={{ once: true, amount: 0.2 }} 
+            >
+              <Card imagem={card.imagem} nome={card.nome} descricao={card.descricao} />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </motion.section>
 
-            <div className="conetudo">
-              {cards.map((card, index) => (
-                <Card key={index} imagem={card.imagem} nome={card.nome} descricao={card.descricao} />
-              ))}
-            </div>
-          </div>
-        </section>
 
-        <section id="projetos">
+        <motion.section
+          id="projetos"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2  }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <div className="Projetos">
             <div className="titulo">
               <h1>Meus Projetos</h1>
@@ -107,7 +149,7 @@ function App() {
               </a>
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );
