@@ -139,14 +139,13 @@ function App() {
               <div className="linha"></div>
             </div>
             <div className="meus-trabalhos">
-              <a href="http://4.172.207.208:3056/">
                 <Projetu
                   imagem={Site}
                   titulo="Doctor's Health"
                   descricao="TCC"
                   data="28 de outubro de 2024"
                 />
-              </a>
+            
             </div>
           </div>
         </motion.section>
