@@ -9,6 +9,7 @@ import React1 from '../assets/react.png';
 import Node from '../assets/node.png';
 import Projetu from '../components/card-projeto/projeto';
 import Site from '../assets/site.png';
+import automacao from '../assets/automação.png';
 import Cv from '../assets/cv.pdf';
 import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
@@ -25,14 +26,14 @@ function App() {
   ];
 
   useEffect(() => {
-  
+
     VanillaTilt.init(document.querySelectorAll('[data-tilt]'));
   }, []);
 
   const fazerDownload = () => {
-    const link = document.createElement('a');  
-    link.href = Cv;  
-    link.download = 'Cv_NicolasVoltareli.pdf';  
+    const link = document.createElement('a');
+    link.href = Cv;
+    link.download = 'Cv_NicolasVoltareli.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -49,8 +50,8 @@ function App() {
       <div className="fundo">
         <Header />
 
-        <motion.section 
-          id="home" 
+        <motion.section
+          id="home"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2 }}
@@ -82,7 +83,7 @@ function App() {
           id="sobre"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2  }}
+          transition={{ duration: 1.2 }}
           viewport={{ once: true, amount: 0.83 }}
         >
           <div className="sobre">
@@ -93,44 +94,44 @@ function App() {
           </div>
         </motion.section>
 
-    
+
         <motion.section
-      id="habilidades"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2  }}
-      viewport={{ once: true, amount: 0.4 }} 
-    >
-      <div className="habilidades">
-        <div className="titulo">
-          <h1>Minhas habilidades</h1>
-        </div>
-        <div className="conetudo">
-          {cards.map((card, index) => (
-            <motion.div
-              key={index}
-              className="card-container"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.3, 
-              }}
-              viewport={{ once: true, amount: 0.2 }} 
-            >
-              <Card imagem={card.imagem} nome={card.nome} descricao={card.descricao} />
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </motion.section>
+          id="habilidades"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <div className="habilidades">
+            <div className="titulo">
+              <h1>Minhas habilidades</h1>
+            </div>
+            <div className="conetudo">
+              {cards.map((card, index) => (
+                <motion.div
+                  key={index}
+                  className="card-container"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.6,
+                    delay: index * 0.3,
+                  }}
+                  viewport={{ once: true, amount: 0.2 }}
+                >
+                  <Card imagem={card.imagem} nome={card.nome} descricao={card.descricao} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </motion.section>
 
 
         <motion.section
           id="projetos"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2  }}
+          transition={{ duration: 2 }}
           viewport={{ once: true, amount: 0.2 }}
         >
           <div className="Projetos">
@@ -139,13 +140,20 @@ function App() {
               <div className="linha"></div>
             </div>
             <div className="meus-trabalhos">
-                <Projetu
-                  imagem={Site}
-                  titulo="Doctor's Health"
-                  descricao="TCC"
-                  data="28 de outubro de 2024"
-                />
-            
+              <Projetu
+                imagem={Site}
+                titulo="Doctor's Health"
+                descricao="TCC"
+                data="28 de outubro de 2024"
+              />
+
+              <Projetu
+                imagem={automacao}
+                titulo="Software de Automação"
+                descricao="Copiar e colar automático do excel para o site em programa instalável"
+                data="06 de janeiro de 2025"
+              />
+
             </div>
           </div>
         </motion.section>
