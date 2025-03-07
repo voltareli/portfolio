@@ -11,6 +11,7 @@ import Projetu from '../components/card-projeto/projeto';
 import Site from '../assets/site.png';
 import automacao from '../assets/automação.png';
 import Eosinnov from '../assets/eosinnov.png';
+import Eosinnov2 from '../assets/eosinnov2.png';
 import Cv from '../assets/cv.pdf';
 import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
@@ -151,12 +152,12 @@ function App() {
               <Projetu
                 imagem={automacao}
                 titulo="Software de Automação"
-                descricao="Copiar e colar automático do excel para o site em programa instalável"
+                descricao="Validação de cupom fiscal automatizado"
                 data="06 de Janeiro de 2025"
               />
 
               <Projetu
-                imagem={Eosinnov}
+                imagem={Eosinnov2}
                 titulo="Eosinnov"
                 descricao="Sistema de cadastro de funcionários"
                 data="24 de Fevereiro de 2025"
