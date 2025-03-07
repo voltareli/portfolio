@@ -10,6 +10,7 @@ import Node from '../assets/node.png';
 import Projetu from '../components/card-projeto/projeto';
 import Site from '../assets/site.png';
 import automacao from '../assets/automação.png';
+import Eosinnov from '../assets/eosinnov.png';
 import Cv from '../assets/cv.pdf';
 import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
@@ -144,14 +145,21 @@ function App() {
                 imagem={Site}
                 titulo="Doctor's Health"
                 descricao="TCC"
-                data="28 de outubro de 2024"
+                data="28 de Outubro de 2024"
               />
 
               <Projetu
                 imagem={automacao}
                 titulo="Software de Automação"
                 descricao="Copiar e colar automático do excel para o site em programa instalável"
-                data="06 de janeiro de 2025"
+                data="06 de Janeiro de 2025"
+              />
+
+              <Projetu
+                imagem={Eosinnov}
+                titulo="Eosinnov"
+                descricao="Sistema de cadastro de funcionários"
+                data="24 de Fevereiro de 2025"
               />
 
             </div>
