@@ -62,7 +62,7 @@ function App() {
           <div className="lang">
             <div className="infos">
               <h2 className="nom1">
-                Olá, Sou o <br /> <span className="nome">Nicolas Voltareli</span>
+                Olá, Sou o <br/> <span className="nome">Nicolas Voltareli</span>
               </h2>
               <p>Seu desenvolvedor <strong>full-stack</strong></p>
 
@@ -78,6 +78,7 @@ function App() {
             <div className="foto" data-tilt data-tilt-max="3" data-tilt-speed="100" data-tilt-perspective="100">
               <img src={Eu} alt="Foto de Nicolas Voltareli" />
             </div>
+
           </div>
         </motion.section>
 
