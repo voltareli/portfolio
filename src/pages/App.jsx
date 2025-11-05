@@ -10,8 +10,6 @@ import Node from '../assets/node.png';
 import Projetu from '../components/card-projeto/projeto';
 import Site from '../assets/site.png';
 import automacao from '../assets/automação.png';
-import Eosinnov from '../assets/eosinnov.png';
-import Eosinnov2 from '../assets/eosinnov2.png';
 import Cv from '../assets/cv.pdf';
 import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
