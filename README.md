@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# 🚀 Portfólio — Nicolas Voltareli
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao meu portfólio pessoal!
 
-## Available Scripts
+Este projeto foi desenvolvido para apresentar um pouco sobre mim, minhas habilidades, experiências e projetos na área de tecnologia. O objetivo é centralizar meus principais trabalhos e mostrar minha evolução como estudante e desenvolvedor.
 
-In the project directory, you can run:
+## 👨‍💻 Sobre mim
 
-### `npm start`
+Meu nome é **Nicolas Voltareli** e sou estudante de **Engenharia de Software**, com formação técnica em Tecnologia da Informação com foco em programação.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Tenho interesse principalmente em **desenvolvimento de software, backend, bancos de dados, análise de dados e automação de processos**. Busco constantemente desenvolver projetos práticos para aprimorar minhas habilidades e transformar conhecimentos em soluções reais.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Atualmente, venho trabalhando e estudando tecnologias voltadas para desenvolvimento de sistemas e análise de dados.
 
-### `npm test`
+## 🛠️ Tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Front-end
 
-### `npm run build`
+* React.js
+* JavaScript
+* HTML5
+* CSS3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Back-end
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Node.js
+* JavaScript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Banco de Dados
 
-### `npm run eject`
+* MySQL
+* SQL
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Outras tecnologias
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Git
+* GitHub
+* Electron
+* Power BI
+* DAX
+* Excel
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Sobre o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+O portfólio foi desenvolvido utilizando **React.js**, com uma interface responsiva e organizada para apresentar minhas informações profissionais e projetos.
 
-## Learn More
+A aplicação tem como objetivo funcionar como uma apresentação profissional online, reunindo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* 👤 Sobre mim
+* 💼 Experiências
+* 🚀 Projetos
+* 🛠️ Habilidades técnicas
+* 📊 Conhecimentos em dados
+* 📫 Formas de contato
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ▶️ Executando o projeto
 
-### Code Splitting
+Clone o repositório:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+```
 
-### Analyzing the Bundle Size
+Entre na pasta:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd SEU-REPOSITORIO
+```
 
-### Making a Progressive Web App
+Instale as dependências:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+Execute o projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+A aplicação será executada em:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```text
+http://localhost:3000
+```
 
-### `npm run build` fails to minify
+## 📌 Próximos passos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pretendo continuar evoluindo o projeto conforme avanço na minha carreira e nos meus estudos, adicionando novos projetos, tecnologias e experiências profissionais.
+
+---
+
+### 📫 Contato
+
+**LinkedIn:** [Nicolas Voltareli](https://www.linkedin.com/in/nicolas-voltareli-coelho-998989315/)
+
+**Instagram:** [@vvoltareli](https://www.instagram.com/vvoltareli/)
+
+**E-mail:** [nivoltareli@gmail.com](mailto:nivoltareli@gmail.com)
+
+---
+
+⭐ Se você gostou do projeto, fique à vontade para explorar meus outros repositórios!
